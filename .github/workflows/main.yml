@@ -16,3 +16,6 @@ jobs:
         gem install bundler -v 2.2.2
         bundle install
         bundle exec rake
+    - name: Release Gem to GitHub Packages
+      uses: jstastny/publish-gem-to-github@v1.3
+
