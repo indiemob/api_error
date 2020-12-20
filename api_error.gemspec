@@ -3,7 +3,7 @@
 require_relative "lib/api_error/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "api_errors"
+  spec.name          = "api_error"
   spec.version       = ApiError::VERSION
   spec.authors       = ["Humberto Guerrero"]
   spec.email         = ["hguerrerojaime@gmail.com"]
