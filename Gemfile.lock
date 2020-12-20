@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    api_errors (0.1.0)
+    api_error (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -13,7 +13,7 @@ GEM
       ast (~> 2.4.1)
     rainbow (3.0.0)
     rake (13.0.2)
-    regexp_parser (2.0.0)
+    regexp_parser (2.0.1)
     rexml (3.2.4)
     rspec (3.10.0)
       rspec-core (~> 3.10.0)
@@ -46,7 +46,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  api_errors!
+  api_error!
   rake (~> 13.0)
   rspec (~> 3.0)
   rubocop (~> 0.80)
