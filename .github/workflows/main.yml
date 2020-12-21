@@ -16,9 +16,9 @@ jobs:
         gem install bundler -v 2.2.2
         bundle install
         bundle exec rake
-    - name: Release Gem to GitHub Packages
-      uses: jstastny/publish-gem-to-github@v1.3
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        owner: indiemob
-
+    - name: Publish to Rubygems
+      uses: cadwallion/publish-rubygems-action@v1.0.0
+      env:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        RUBYGEMS_API_KEY: ${{secrets.RUBYGEMS_API_KEY}}
+        RELEASE_COMMAND: bundle exec rake release
